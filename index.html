@@ -1,0 +1,118 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title> Google Search</title>
+    </head>
+    <center>
+      <header>
+        <ul>
+          <li><a class="links" href="#user"><button class="Signbutton" type="button">Sign up</button></a></li>
+          <li><a href="#grid"><img class="grid" src="bars.png"> </a></li>
+          <li><a href="./Image.html">Images</a></li>
+          <li><a href="./advanced.html">advanced</a></li>
+        </ul>
+        <style>
+          ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          li{
+            list-style: none;
+            margin-left:20px;
+          }
+          li a{
+            
+              color:#111;
+              text-decoration: none;
+              font-size: 13px;
+          }
+          .grid{
+            height:23px;
+            position:relative;
+            bottom:4px
+          }
+          .signbutton{
+            background-color:#4885;
+            color:#fff;
+            border:none;
+            border-radius: 3px;
+            padding:7px 10px;
+            position:relative;
+            bottom:7px;
+            font-weight:bold;
+          }
+          .logo{
+            margin-top:200px;
+            margin-bottom:20px;
+          }
+          .bar{
+            margin:0 auto;
+            width:575px;
+            border-radius:30px;
+            border:3px solid #dcdcdc;
+          }
+          .bar:hover{
+            box-shadow:1px 1px 8px 1px #dcdcdc;
+          }
+          .bar:focus-width{
+            box-shadow:1px 1px 8px 1px #dcdcdc;
+            outline:none;
+          }
+          .searchbar{
+            height:45px;
+            border:none;
+            width:500px;
+            font-size:16px;
+            outline:none;
+          }
+          .voice{
+            height:20px;
+            position:relative;
+            top:5px;
+            left:10px;
+          }
+          .buttons{
+            margin-top:20px;
+          }
+          .button{
+            margin: 0 5px;
+            padding: 12px 20px;
+            color:#555;
+            font-size:14px;
+            border: none;
+            cursor: pointer;
+            border-radius:4px;
+            border: 1px solid transparent;
+            outline:none;
+          }
+          .button:hover{
+            border:1px solid #cBcBcB;
+            padding: 9px 19px;
+            color:#cBcBcB;
+          }
+          .button:focus{
+            border:1px solid #4885;
+            padding: 9px 10px;
+          }
+        </style>
+      </header>
+      <body>
+        <div class="logo">
+          <img alt="Google" src="google.png">
+        </div>
+        <form action:https://google.com/search>
+        <div class="bar">
+          <input class="searchbar" type="search" name="q">
+          <a href="p"><img class="voice" src="mic.png"></a>
+        </div>
+        <div class="buttons">
+          <button class="button" type="submit">Google Search</button>
+          <button class="button" type="button">I'm Feeling Lucky</button>
+        </div>
+        </form>
+      </body>
+    </center>
+    
+  </html>

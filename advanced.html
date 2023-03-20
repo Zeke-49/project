@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Advanced Search</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image.png">
+  </head>
+  <header>
+    <center>
+      <ul>
+        <li><a class="links" href="#user"><button class="Signbutton" type="button">Sign up</button></a></li>
+        <li><a href="#grid"><img class="grid" src="bars.png"> </a></li>
+        <li><a href="./index.html">Search</a></li>
+        <li><a href="./image.html">Images</a></li>
+        <li>
+          <img alt="Google" class="logo" height="30%" width="30%" src=""
+        </li>
+      </ul>
+      <style>
+        ul{
+          list-style-type:none;
+          overflow:hidden;
+        }
+        li{
+          float:right;
+        }
+        li a{
+          color:#000;
+          display:block;
+          text-align:center;
+          padding:10px 10px;
+          text-decoration: none; 
+          font-size:14px;
+        }
+        li a:hover{
+          text-decoration: underline;
+        }
+        .grid{
+          height:23px;
+          position:relative;
+          bottom:4px
+        }
+        .signbutton{
+          background-color:#4885;
+          color:#fff;
+          border:none;
+          border-radius: 3px;
+          padding:7px 10px;
+          position:relative;
+          bottom:7px;
+          font-weight:bold;
+        }
+        .logo{
+          margin-top:200px;
+          margin-bottom:20px;
+        }
+        * {
+          box-sizing:border-box;
+        }
+         input[type-text],select,textarea{
+          width:100%
+          padding:12px;
+          border:1px solid #ccc;
+          border-radius: 4px;
+          resize:vertical;
+         }
+         label{
+          padding:12px 12px 12px 0;
+          display:inline-block;
+         }
+         input[type=submit]{
+          background-color: #4885;
+          color:white;
+          padding:12px 20px;
+          border:none;
+          float:right;
+         }
+         input[type=submit]:hover{
+          background-color: #45a049;
+         }
+         .container{
+          border-radius:5px;
+          background-color: #f2f2f2;
+          padding:20px;
+         }
+         .col-25{
+          float:left;
+          width:25%;
+          margin-top:6px;
+         }
+         .col-75{
+          float:left;
+          width:75%;
+          margin-top:6px;
+         }
+
+         .row:after{
+          content:**;
+          display: table;
+          clear:both;
+         }
+
+      </style>
+      </header>
+      <body>
+        <div class="container">
+
+          <form action="http://www.google.com/search" method="get">
+
+            <div class="row">
+              <div class="col-25">
+                <label for="fname"> all these words:</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="all these words">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for=" as_4"> this exact word or phrase:</label>
+              </div>
+              <div class="col-75">
+                <input type="text " id="as_q" name="as_q" placeholder="this exact word or phrase:...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="as_oq">any of these words:</label>
+              </div>
+              <div class="col-75">
+                <input type="text " id="as_oq" name="as_oq" placeholder="as any of these:...">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="as_oq">none of these words:</label>
+              </div>
+            </div>
+            <div class="col-75">
+              <input type="text " id="as_q" name="as_q" placeholder="none of these words:...">
+            </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Advanced Search">
+            </div>
+          </form>
+        </div>
+      </body>
+    
+    
+</html>
